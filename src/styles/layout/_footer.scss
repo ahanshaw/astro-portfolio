@@ -13,7 +13,7 @@
 
         @include mixins.break(mobile) {
             flex-wrap: wrap;
-        gap: mixins.toRem(16) mixins.toRem(32);
+            gap: mixins.toRem(16) mixins.toRem(32);
         }
     }
 
