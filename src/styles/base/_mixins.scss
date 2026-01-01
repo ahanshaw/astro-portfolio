@@ -1,0 +1,24 @@
+@use "sass:map";
+
+// to rem
+$base-size: 16;
+
+@function toRem($target, $context: $base-size) {
+    @return calc(($target / $context) * 1em);
+}
+
+// breakpoints
+$breakpoints: (
+  'mobile':  toRem(620),
+  'tablet': toRem(768),
+  'laptop':  toRem(1024),
+  'desktop': toRem(1440)
+);
+
+@mixin break($breakpoint) {
+    @if map.has-key($breakpoints, $breakpoint) {
+        @media (max-width: map.get($breakpoints, $breakpoint)) {
+            @content;
+        }
+    }
+}

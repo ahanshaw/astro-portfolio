@@ -1,0 +1,74 @@
+@use "../base/_fonts.scss";
+@use "../base/_variables.scss";
+@use "../base/_mixins.scss";
+
+.about {
+    padding-block: mixins.toRem(64);
+
+    @include mixins.break(mobile) {
+        padding-block: mixins.toRem(32);
+    }
+
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: mixins.toRem(48);
+        margin-top: mixins.toRem(48);
+
+        @include mixins.break(mobile) {
+            flex-direction: column;
+            //margin-top: 0;
+        }
+    }
+
+    &-image {
+        position: relative;
+        flex: 1;
+        overflow: hidden;
+
+        @include mixins.break(mobile) {
+            aspect-ratio: 1 / 1;
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+            @include mixins.break(mobile) {
+                position: relative;
+                top: unset;
+                left: unset;
+            }
+        }
+    }
+
+    &-copy {
+        flex: 1.75;
+
+        p {
+            margin: 0 0 mixins.toRem(16) 0;
+
+            &:last-of-type {
+                margin: 0;
+            }
+        }
+
+        a {
+            color: variables.$white;
+            text-decoration: underline;
+            text-decoration-color: inherit;
+            transition: text-decoration-color .3s ease;
+
+
+            &:hover {
+                text-decoration-color: transparent;
+            }
+        }
+    }
+}

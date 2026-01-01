@@ -1,0 +1,64 @@
+@use "../base/_fonts.scss";
+@use "../base/_variables.scss";
+@use "../base/_mixins.scss";
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    20% {
+        transform: translateY(-100px);
+    } 
+
+    40% {
+        transform: translateY(-70px);
+    }   
+    
+    60% {
+        transform: translateY(-80px);
+    }     
+
+    80% {
+        transform: translateY(-70px);
+    }   
+
+    100% {
+        transform: translateY(-80px);
+    }
+}
+
+#otter-animation.show {
+
+    #speech,
+    #text {
+        opacity: 1;
+    }
+
+    #otter {
+        animation: 1.2s 1 forwards bounce;
+    }
+}
+
+#speech,
+#text,
+#speech-scrolled {
+    opacity: 0;
+    transition: opacity .6s ease .9s;
+}
+
+#speech.hide {
+    display: none;
+}
+
+#speech-scrolled.show {
+    opacity: 1;
+}
+
+#text {
+    @include fonts.font-medium;
+    font-size: mixins.toRem(18);
+    color: variables.$black;
+    opacity: 0;
+    transition: opacity .6s ease .9s;
+}

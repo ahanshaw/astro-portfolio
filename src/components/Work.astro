@@ -1,0 +1,30 @@
+---
+import projects from "../data/work.json";
+---
+
+<section id="work" class="work">
+    <div class="container subhead">
+        <h2>Work</h2>
+    </div>
+    <div class="container work-inner">
+        <div class="work-list">
+            {
+                projects.map((item) => (
+                    <div class="work-item">
+                        <div class={`work-item-image ${item.isNDA}`}>
+                            <img
+                                src={`/images/${item.image}`}
+                                alt={`screenshot of ${item.name}`}
+                            />
+                        </div>
+                        <div class="work-item-copy">
+                            <h3>{item.name}</h3>
+                            <p class="platform">Platform: {item.platform}</p>
+                            <p class="desc">{item.description}</p>
+                        </div>
+                    </div>
+                ))
+            }
+        </div>
+    </div>
+</section>

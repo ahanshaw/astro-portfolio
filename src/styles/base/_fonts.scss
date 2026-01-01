@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'AvenirNextVariable';
+    src: url('/src/fonts/AvenirNext_Variable-subset.woff2') format('woff2'),
+        url('src/fonts/AvenirNext_Variable-subset.woff') format('woff');
+    font-weight: 1 999;
+}
+
+@mixin font-regular {
+    font-family: "AvenirNextVariable", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@mixin font-medium {
+    font-family: "AvenirNextVariable", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+@mixin font-bold {
+    font-family: "AvenirNextVariable", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}

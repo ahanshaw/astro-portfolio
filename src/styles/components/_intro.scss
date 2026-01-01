@@ -1,0 +1,31 @@
+@use "../base/_fonts.scss";
+@use "../base/_variables.scss";
+@use "../base/_mixins.scss";
+
+.intro {
+    min-height: 100vh;
+
+    &-inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+        padding-block: mixins.toRem(128) mixins.toRem(64);
+    }
+
+    &-title {
+        text-align: center;
+
+        h1 {
+            font-size: 9vw;
+            line-height: 1;
+            margin: 0 0 mixins.toRem(4) 0;
+        }
+
+        p {
+            font-size: 5vw;
+            margin: 0;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+---
+
+---
+
+<script>
+    const speechText = document.querySelector("#text");
+    const speechTextContainer = document.querySelector("#text text");
+    const speechBubble = document.getElementById("speech");
+    const speechBubbleScrolled = document.getElementById("speech-scrolled");
+    const otterAnimation = document.getElementById("otter-animation");
+    const workSection = document.getElementById("work");
+
+    let speech = "You otter look at this portfolio!";
+    speechTextContainer.textContent = speech;
+
+    setTimeout(() => {
+        otterAnimation.classList.add("show");
+    }, 800);
+
+    const callback = (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                speechBubbleScrolled.classList.add("show");
+                speechBubble.classList.add("hide");
+                speech = "Thanks for looking!";
+                speechTextContainer.textContent = speech;
+                observer.unobserve(entry.target);
+            }
+        });
+    };
+
+    const options = {
+        threshold: 0.5,
+    };
+
+    const observer = new IntersectionObserver(callback, options);
+    observer.observe(workSection);
+
+    const dateSpan = document.getElementById('date');
+    const currentDate =  new Date().getFullYear().toString();
+    dateSpan.textContent = currentDate;
+
+</script>

@@ -1,0 +1,12 @@
+@use "base/_reset.scss";
+@use "base/_fonts.scss";
+@use "base/_variables.scss";
+@use "base/_mixins.scss";
+@use "base/_general.scss";
+
+@use "components/_intro.scss";
+@use "components/_otter.scss";
+@use "components/_work.scss";
+@use "components/_about.scss";
+
+@use "layout/_footer.scss";

@@ -1,0 +1,72 @@
+@use "../base/_fonts.scss";
+@use "../base/_variables.scss";
+@use "../base/_mixins.scss";
+
+.work {
+
+    &-inner {
+        padding-block: mixins.toRem(48);
+
+        @include mixins.break(mobile) {
+            padding-block: mixins.toRem(32);
+        }
+    }
+
+    &-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: mixins.toRem(48);
+
+        @include mixins.break(laptop) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include mixins.break(mobile) {
+            grid-template-columns: 1fr;
+            gap: mixins.toRem(64);
+        }
+    }
+
+    &-item {
+
+        &-image {
+            aspect-ratio: 1.5 / 1;
+
+            &.nda {
+                @include mixins.break(laptop) {
+                    aspect-ratio: 3 / 1;
+                }
+
+                img {
+                    object-position: bottom;
+                }
+            }
+
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: top;
+            }
+        }
+
+        &-copy {
+            margin-top: mixins.toRem(32);
+
+            h3 {
+                @include fonts.font-bold;
+                font-size: mixins.toRem(24);
+                margin: 0;
+            }
+
+            .platform {
+                margin-bottom: mixins.toRem(16);
+            }
+
+            .desc {
+                margin: 0;
+            }
+        }
+    }
+}

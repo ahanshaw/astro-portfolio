@@ -1,0 +1,44 @@
+@use "../base/_fonts.scss";
+@use "../base/_variables.scss";
+@use "../base/_mixins.scss";
+
+.footer {
+    padding-block: mixins.toRem(64) mixins.toRem(48);
+
+    &-inner {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        gap: mixins.toRem(32);
+    }
+
+    p {
+        @include fonts.font-bold;
+        font-size: mixins.toRem(12);
+        line-height: 1;
+        color: variables.$white;
+        margin: 0;
+    }
+
+    a {
+        display: block;
+        padding: mixins.toRem(4);
+        border-radius: 50%;
+        transition: background-color .3s ease;
+
+        &:hover {
+            background-color: variables.$white;
+
+            svg {
+                fill: variables.$black;
+            }
+        }
+
+        svg {
+            width: mixins.toRem(16);
+            height: mixins.toRem(16);
+            fill: variables.$white;
+            transition: fill .3s ease;
+        }
+    }
+}
