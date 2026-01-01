@@ -51,12 +51,12 @@
         a {
             color: variables.$white;
             text-decoration: underline;
-            text-decoration-color: inherit;
+            text-decoration-color: rgba(variables.$white, .6);
             transition: text-decoration-color .3s ease;
 
 
             &:hover {
-                text-decoration-color: transparent;
+            text-decoration-color: rgba(variables.$white, 1);
             }
         }
     }
