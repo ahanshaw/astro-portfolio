@@ -18,18 +18,30 @@
         text-align: center;
 
         h1 {
-            font-size: 9vw;
+            font-size: mixins.toRem(112);
             line-height: 1;
             margin: 0 0 mixins.toRem(4) 0;
 
+            @include mixins.break(tablet) {
+                font-size: mixins.toRem(80);
+            }
+
             @include mixins.break(mobile) {
-                font-size: 10vw;
+                font-size: mixins.toRem(36);
             }
         }
 
         p {
-            font-size: 5vw;
+            font-size: mixins.toRem(64);
             margin: 0;
+
+            @include mixins.break(tablet) {
+                font-size: mixins.toRem(48);
+            }
+
+            @include mixins.break(mobile) {
+                font-size: mixins.toRem(24);
+            }
         }
     }
 }
