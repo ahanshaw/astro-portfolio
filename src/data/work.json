@@ -9,20 +9,20 @@
     {
         "name": "Loyola Today",
         "platform": "Wordpress",
-        "description": "Loyola University in Chicago needed to replace their old newsroom site with a more updated, more organized site that accommodated students, faculty, alumni, and media. I worked on the frontend of this Wordpress site.",
+        "description": "Loyola University in Chicago needed to replace their old newsroom site with a more updated, more organized site that accommodated students, faculty, alumni, and media. I helped build the front end of this Wordpress site.",
         "image": "loyola.jpg"
     },
     {
         "name": "NDA Project",
         "platform": "Laravel Nova, Next.js",
-        "description": "This site was built for a global corporation to share marketing ideas and other content. I added custom styling for the Laravel Nova admin site to match the company’s branding, and updated and created pages for the frontend Next.js site.",
+        "description": "This site was built for a global corporation to share marketing ideas and other content. I added custom styling for the Laravel Nova admin site to match the company’s branding, and updated and created pages for the front-end Next.js site.",
         "image": "top-secret.jpg",
         "isNDA": "nda"
     },
     {
         "name": "Hsu’s Ginseng",
         "platform": "Salesforce",
-        "description": "I built the frontend of this Salesforce site with Salesforce Lightning Web Components, which were then handed over to a development partner for implementation.",
+        "description": "I built the front end of this Salesforce site with Salesforce Lightning Web Components, which were then handed over to a development partner for implementation.",
         "image": "hsus.jpg"
     },
     {
@@ -35,7 +35,7 @@
     {
         "name": "ArtsQuest",
         "platform": "Wordpress",
-        "description": "I built the frontend of this animation-heavy site for ArtsQuest, a non-profit arts organization located in Pennsylvania.",
+        "description": "I built the front end of this animation-heavy site for ArtsQuest, a non-profit arts organization located in Pennsylvania.",
         "image": "artsquest.jpg"
     }
 ]
