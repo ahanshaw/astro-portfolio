@@ -25,7 +25,7 @@
     {
         "name": "Hsu’s Ginseng",
         "platform": "Salesforce",
-        "description": "I built the front end of this Salesforce site with Salesforce Lightning Web Components, which were then handed over to a development partner for implementation.",
+        "description": "I built the front end of this Salesforce ecommerce site with Salesforce Lightning Web Components, which were then handed over to a development partner for implementation.",
         "alt": "Screenshot of the Hsu's Ginseng homepage.",
         "image": "hsus.jpg"
     },
