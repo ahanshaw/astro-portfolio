@@ -33,7 +33,7 @@
             aspect-ratio: 1.5 / 1;
 
             &.nda {
-                @include mixins.break(laptop) {
+                @include mixins.break(mobile) {
                     aspect-ratio: 3 / 1;
                 }
 
