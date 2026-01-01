@@ -17,6 +17,10 @@ h2 {
     margin: 0 auto;
     padding-inline: mixins.toRem(8);
     background-color: variables.$black;
+
+    @include mixins.break(mobile) {
+        font-size: mixins.toRem(32);
+    }
 }
 
 p {
