@@ -16,7 +16,7 @@
         gap: mixins.toRem(48);
         margin-top: mixins.toRem(48);
 
-        @include mixins.break(mobile) {
+        @include mixins.break(tablet) {
             flex-direction: column;
         }
     }
@@ -26,8 +26,8 @@
         flex: 1;
         overflow: hidden;
 
-        @include mixins.break(mobile) {
-            aspect-ratio: 1 / 1;
+        @include mixins.break(tablet) {
+            aspect-ratio: 2 / 1;
         }
 
         img {
@@ -39,7 +39,7 @@
             height: 100%;
             object-fit: cover;
 
-            @include mixins.break(mobile) {
+            @include mixins.break(tablet) {
                 position: relative;
                 top: unset;
                 left: unset;
