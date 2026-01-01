@@ -2,7 +2,7 @@
     {
         "name": "Launching January 2026",
         "platform": "Astro, React",
-        "description": "I built this marketing site for a dental insurance company using Astro and React components. I also updated the client’s .NET-based enrollment site to update the styling as well as hand off user data from the marketing site.",
+        "description": "I built this marketing site for a dental insurance company using Astro and React components. I also updated the client’s .NET-based enrollment site to refresh the styling as well as hand off user data from the marketing site.",
         "image": "launching-soon.jpg",
         "alt": "Illustration of an otter with a speech bubble that says 'Launching soon!'",
         "isNDA": "nda"
