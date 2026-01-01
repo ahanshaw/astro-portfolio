@@ -8,8 +8,9 @@
     const speechBubble = document.getElementById("speech");
     const speechBubbleScrolled = document.getElementById("speech-scrolled");
     const otterAnimation = document.getElementById("otter-animation");
-    const workSection = document.getElementById("work");
+    const  aboutSection = document.getElementById("about");
 
+    // start otter animation
     let speech = "You otter look at this portfolio!";
     speechTextContainer.textContent = speech;
 
@@ -17,6 +18,7 @@
         otterAnimation.classList.add("show");
     }, 800);
 
+    // update speech bubble message after scroll
     const callback = (entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
@@ -30,14 +32,16 @@
     };
 
     const options = {
-        threshold: 0.5,
+        root: null,
+        rootMargin: '0px',
+        threshold: .1,
     };
 
     const observer = new IntersectionObserver(callback, options);
-    observer.observe(workSection);
+    observer.observe(aboutSection);
 
+    // set copyright date
     const dateSpan = document.getElementById('date');
     const currentDate =  new Date().getFullYear().toString();
     dateSpan.textContent = currentDate;
-
 </script>
