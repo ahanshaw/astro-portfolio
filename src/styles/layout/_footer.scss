@@ -10,6 +10,11 @@
         justify-content: center;
         align-items: flex-end;
         gap: mixins.toRem(32);
+
+        @include mixins.break(mobile) {
+            flex-wrap: wrap;
+        gap: mixins.toRem(16) mixins.toRem(32);
+        }
     }
 
     p {
@@ -18,6 +23,11 @@
         line-height: 1;
         color: variables.$white;
         margin: 0;
+
+        @include mixins.break(mobile) {
+            text-align: center;
+            width: 100%;
+        }
     }
 
     a {
