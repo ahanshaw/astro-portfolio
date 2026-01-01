@@ -19,7 +19,7 @@ h2 {
     background-color: variables.$black;
 
     @include mixins.break(mobile) {
-        font-size: mixins.toRem(32);
+        font-size: mixins.toRem(28);
     }
 }
 
