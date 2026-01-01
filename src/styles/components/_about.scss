@@ -41,6 +41,7 @@
         }
 
         p {
+            max-width: 70ch;
             margin: 0 0 mixins.toRem(16) 0;
 
             &:last-of-type {
