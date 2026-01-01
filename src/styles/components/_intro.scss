@@ -21,6 +21,10 @@
             font-size: 9vw;
             line-height: 1;
             margin: 0 0 mixins.toRem(4) 0;
+
+            @include mixins.break(mobile) {
+                font-size: 10vw;
+            }
         }
 
         p {
