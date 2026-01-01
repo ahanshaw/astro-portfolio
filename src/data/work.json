@@ -16,7 +16,7 @@
     },
     {
         "name": "NDA Project",
-        "platform": "Laravel Nova, Next.js",
+        "platform": "Laravel Nova, Next.js, Algolia",
         "description": "This site was built for a global corporation to share marketing ideas and other content. I added custom styling for the Laravel Nova admin site to match the company’s branding, and updated and created pages for the front-end Next.js site.",
         "image": "top-secret.jpg",
         "alt": "Illustration of an otter with a speech bubble that says 'Sorry! This is top secret.'",
