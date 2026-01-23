@@ -1,18 +1,18 @@
 [
     {
-        "name": "Launching January 2026",
-        "platform": "Astro, React",
-        "description": "I built this marketing site for a dental insurance company using Astro and React components. I also updated the client’s .NET-based enrollment site to refresh the styling as well as allow hand-off of user information from the marketing site.",
-        "image": "launching-soon.jpg",
-        "alt": "Illustration of an otter with a speech bubble that says 'Launching soon!'",
+        "name": "NDA Project",
+        "platform": "Contentful, Next.js",
+        "description": "I added new fields and variants in Contentful and then created and updated Next.js components using Jest for testing and Tailwind for styling in this marketing site for a large fintech organization.",
+        "image": "top-secret.jpg",
+        "alt": "Illustration of an otter with a speech bubble that says 'Sorry! This is top secret.'",
         "isNDA": "nda"
     },
     {
-        "name": "Loyola Today",
-        "platform": "Wordpress",
-        "description": "Loyola University in Chicago needed to replace their old newsroom site with an updated, more organized site that accommodated students, faculty, alumni, and media. I helped build the front end of this Wordpress site.",
-        "alt": "Screenshot of the Loyola Today homepage.",
-        "image": "loyola.jpg"
+        "name": "Teethkeepers",
+        "platform": "Astro, React",
+        "description": "I built this marketing site for a dental insurance company using Astro and React components. I also updated the client’s .NET-based enrollment site to refresh the styling as well as allow hand-off of user information from the marketing site.",
+        "image": "teethkeepers.jpg",
+        "alt": "Illustration of an otter with a speech bubble that says 'Launching soon!'"
     },
     {
         "name": "NDA Project",
@@ -23,25 +23,24 @@
         "isNDA": "nda"
     },
     {
-        "name": "Hsu’s Ginseng",
-        "platform": "Salesforce",
-        "description": "I built the front end of this Salesforce ecommerce site with Salesforce Lightning Web Components, which were then handed over to a development partner for implementation.",
-        "alt": "Screenshot of the Hsu's Ginseng homepage.",
-        "image": "hsus.jpg"
-    },
-    {
-        "name": "NDA Project",
-        "platform": "Contentful, Next.js",
-        "description": "I added new fields in Contentful and then created/updated Next.js components in this marketing site for a large fintech organization.",
-        "image": "top-secret.jpg",
-        "alt": "Illustration of an otter with a speech bubble that says 'Sorry! This is top secret.'",
-        "isNDA": "nda"
+        "name": "Loyola Today",
+        "platform": "Wordpress",
+        "description": "Loyola University in Chicago needed to replace their old newsroom site with an updated, more organized site that accommodated students, faculty, alumni, and media. I built the front end of this Wordpress site.",
+        "alt": "Screenshot of the Loyola Today homepage.",
+        "image": "loyola.jpg"
     },
     {
         "name": "ArtsQuest",
         "platform": "Wordpress",
-        "description": "I built the front end of this animation-heavy site for ArtsQuest, a non-profit arts organization located in Pennsylvania.",
+        "description": "I built the front end of this animation-heavy Wordpress site for ArtsQuest, a non-profit arts organization located in Pennsylvania.",
         "alt": "Screenshot of the ArtsQuest homepage.",
         "image": "artsquest.jpg"
+    },
+    {
+        "name": "Hsu’s Ginseng",
+        "platform": "Salesforce",
+        "description": "I built Salesforce Lightning Web Components for the front end of this Salesforce ecommerce site, which were then handed over to a development partner for implementation.",
+        "alt": "Screenshot of the Hsu's Ginseng homepage.",
+        "image": "hsus.jpg"
     }
 ]
